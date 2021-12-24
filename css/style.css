@@ -1,0 +1,84 @@
+#masking {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 2;
+}
+#popup {
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.seat-container {
+    max-width: 100%;
+    overflow-x: auto;
+    background-color: #000;
+}
+.close-popup {
+    width: 560px;
+}
+#close-times {
+    cursor: pointer;
+    color: white;
+    font-size: larger;
+}
+.cinema-hall-screen {
+    width: 560px;
+}
+#screen {
+    border-radius: 50%;
+    border-top: 10px solid white;
+    height: 50px;
+}
+#screen-word {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.select-seat-container {
+    width: 560px;
+}
+.seat-circle {
+    width: 30px;
+    height: 25px;
+    border-radius: 50% 50% 0 0;
+    margin: 5px;
+    display: inline-block;
+}
+.seat-available {
+    cursor: pointer;
+    background-color: gray;
+}
+.seat-unavailable {
+    background-color: yellow;
+}
+.seat-sop {
+    background-color: rgb(255, 101, 101);
+}
+.seat-available:hover {
+    background-color: aqua;
+}
+.seat-available.seat-clicked {
+    background-color: rgb(0, 189, 189);
+}
+#confirm-seat {
+    max-width: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+.confirm-button-available {
+    background-color: #FFEE00;
+}
+.confirm-button-available:hover {
+    background-color: #e0d100;
+}

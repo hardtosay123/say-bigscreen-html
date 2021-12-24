@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Screen - Seat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/dummy.css" />
+</head>
+<body>
+    <div class="container">
+        <button id="reload-seat">Reload</button>
+        <div class="w-100">
+            <div style="display: none;" id="masking" class="position-fixed"></div>
+            <div style="display: none;" id="popup" class="seat-container p-3 border position-fixed">
+                <div class="close-popup">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <i id="close-times" class="far fa-times-circle"></i>
+                    </div>
+                </div>
+                <div class="cinema-hall-screen mb-5">
+                    <div id="screen" class="w-100">
+                        <h4 id="screen-word" class="text-white text-center text-uppercase">Screen</h4>
+                    </div>
+                </div>
+                <div id="seat" class="select-seat-container">
+                    
+                </div>
+            </div>
+            <div style="display: none;" id="confirm-seat" class="position-fixed">
+                <div class="bg-light">
+                    <button id="confirm-button" class="btn btn-block text-center text-uppercase">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            function checkedSeat() {
+                var checkedValue = false;
+                $("label.seat-available.seat-clicked").each(function () {
+                    checkedValue = true;
+                });
+                if (checkedValue) {
+                    $("#confirm-button").addClass("confirm-button-available");
+                }
+                else {
+                    $("#confirm-button").removeClass("confirm-button-available");
+                }
+            }
+            function reload_seat() {
+                $("#seat").html("");
+                $("#confirm-button").removeClass("confirm-button-available");
+                var seat_name_prefix = ["A", "B", "C", "D", "E"];
+                var seat_odd_available = [1,1,0,1,0,1,0,1,0,1,0,0];
+                var seat_even_available = [0,0,1,0,1,0,1,0,1,0,1,1];
+                var seatSOP_html = "<div class=\"seat-circle seat-sop\" title=\"Unavailable due to SOP.\"></div>";
+                for (var r = 0; r < 5; r++) {
+                    var odd_or_even = r%2;
+                    var seat_to_arrange = [];
+                    if (odd_or_even == 1) {
+                        seat_to_arrange = seat_even_available;
+                    }
+                    else {
+                        seat_to_arrange = seat_odd_available;
+                    }
+                    for (var i = 0; i < 12; i++) {
+                        var seat_number = seat_name_prefix[r] + (i+1).toString();
+                        var seat_html = "<label for=\"" + seat_number + "\" class=\"seat-circle seat-available\"></label>";
+                        seat_html += "<input type=\"checkbox\" id=\"" + seat_number + "\" class=\"d-none\" name=\"seat[]\" value=\"" + seat_number + "\" />";
+                        if (seat_to_arrange[i] == 1) {
+                            $("#seat").append(seat_html);
+                        }
+                        else {
+                            $("#seat").append(seatSOP_html);
+                        }
+                        
+                        if (i == 1 || i == 9) {
+                            var empty_stair_html = "<div class=\"seat-circle\"></div>";
+                            $("#seat").append(empty_stair_html);
+                        }
+                    }
+                }
+                $("label.seat-available").click(function () {
+                    $(this).toggleClass("seat-clicked");
+                    checkedSeat();
+                });
+            }
+            
+            $("#reload-seat").click(function () {
+                reload_seat();
+                $("#masking,#popup,#confirm-seat").fadeIn();
+            });
+            $("#masking,#close-times").click(function () {
+                $("#masking,#popup,#confirm-seat").fadeOut();
+            });
+        });
+    </script>
+</body>
+</html>
