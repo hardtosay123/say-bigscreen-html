@@ -35,14 +35,6 @@
     border-top: 10px solid white;
     height: 50px;
 }
-#screen-word {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
 .select-seat-container {
     width: 560px;
 }

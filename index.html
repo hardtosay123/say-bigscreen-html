@@ -16,11 +16,63 @@
 <body>
     <div id="menu-navbar">
         <div class="container">
-            something
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" id="logo" class="font-weight-bold text-decoration-none text-white py-2 user-select-none"><span class="logo-yellow">Big</span> Screen</a>
+                <div id="menu" class="d-lg-flex align-items-center">
+                    <a href="index.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Home</a>
+                    <a href="" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Movie / Now Showing</a>
+                    <a href="" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Promotions</a>
+                    <a href="" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Food & Beverages</a>
+                    <div id="has-sub-menu" class="position-relative has-sub-menu">
+                        <a class="text-decoration-none user-select-none">
+                            <div id="expand-sub-menu" class="sub-menu-btn menu-nav-hover py-2 px-4">Help <i id="sub-menu-arrow-position" class="bi bi-chevron-down d-lg-none"></i></div>
+                        </a>
+                        <div id="sub-menu" class="sub-menu">
+                            <a href="seat.html" class="text-decoration-none user-select-none">
+                                <div class="menu-nav-sub-menu-hover py-2 px-4">About Us</div>
+                            </a>
+                            <a href="" class="text-decoration-none user-select-none">
+                                <div class="menu-nav-sub-menu-hover py-2 px-4">Feedback</div>
+                            </a>
+                            <a href="" class="text-decoration-none user-select-none">
+                                <div class="menu-nav-sub-menu-hover py-2 px-4">Privacy Policy</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <i id="mobile-nav" class="bi bi-list menu-nav-hover user-select-none d-lg-none py-2 px-4"></i>
+            </div>
+            
         </div>
     </div>
     <div class="container">
         
     </div>
+    <script>
+        $(document).ready(function () {
+            $("#mobile-nav").click(function () {
+                if ($(this).hasClass("bi-list")) {
+                    $("#logo").addClass("position-relative");
+                    $("#logo").css("z-index", "1034");
+                    $("#menu").addClass("mobile-open-menu");
+                    $(this).removeClass("bi-list");
+                    $(this).addClass("bi-x-square position-relative");
+                    $(this).css("z-index", "1034");
+                }
+                else {
+                    $("#logo").removeClass("position-relative");
+                    $("#logo").css("z-index", "0");
+                    $("#menu").removeClass("mobile-open-menu");
+                    $(this).addClass("bi-list");
+                    $(this).removeClass("bi-x-square position-relative");
+                    $(this).css("z-index", "0");
+                }
+            });
+
+            $("#expand-sub-menu").click(function () {
+                $("#sub-menu").toggleClass("sub-menu-expanded");
+            });
+        });
+    </script>
 </body>
 </html>
