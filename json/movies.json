@@ -1,37 +1,64 @@
 {
     "data": [
         {
-            "type": "movies",
             "id": "1",
-            "attributes": {
-                "name": "No Time to Die",
-                "directed_by": "Cary Joji Fukunaga",
-                "release_date": "28 September 2021",
-                "actors": [
-                    "Daniel Craig",
-                    "Rami Malek",
-                    "Léa Seydoux",
-                    "Lashana Lynch",
-                    "Ben Whishaw",
-                    "Naomie Harris",
-                    "Jeffrey Wright",
-                    "Christoph Waltz",
-                    "Ralph Fiennes"
-                ],
-                "running_time": "163"
-            },
-            "relationships": {
-                "halls": {
-                    "name": "Hall 1",
-                    "show_time": [
-                        "2021-12-23T08:45:00.000Z",
-                        "2021-12-24T06:30:00.000Z",
-                        "2021-12-25T11:00:00.000Z",
-                        "2021-12-26T04:15:00.000Z"
+            "name": "No Time to Die",
+            "directed_by": "Cary Joji Fukunaga",
+            "release_date": "28 September 2021",
+            "actors": [
+                "Daniel Craig",
+                "Rami Malek",
+                "Léa Seydoux",
+                "Lashana Lynch",
+                "Ben Whishaw",
+                "Naomie Harris",
+                "Jeffrey Wright",
+                "Christoph Waltz",
+                "Ralph Fiennes"
+            ],
+            "running_time": "163",
+            "show_time": [
+                {
+                    "id": "1",
+                    "time": "2021-12-23T08:45:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "time": "2021-12-24T06:30:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "time": "2021-12-25T11:00:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "time": "2021-12-26T04:15:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
                     ]
                 }
-                
-            }
+            ]
         }
     ]
 }
