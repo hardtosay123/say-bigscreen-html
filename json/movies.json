@@ -16,6 +16,8 @@
                 "Christoph Waltz",
                 "Ralph Fiennes"
             ],
+            "poster": "image/movie/1/poster.jpg",
+            "carousel": "image/movie/1/carousel.png",
             "running_time": "163",
             "show_time": [
                 {
