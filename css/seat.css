@@ -55,9 +55,6 @@
 .seat-sop {
     background-color: rgb(255, 101, 101);
 }
-.seat-available:hover {
-    background-color: aqua;
-}
 .seat-available.seat-clicked {
     background-color: rgb(0, 189, 189);
 }

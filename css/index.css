@@ -5,6 +5,7 @@ body {
     background-color: #000;
 }
 #menu-navbar {
+    font-size: 20px;
     background-color: #141414;
 }
 .logo-yellow {
@@ -32,7 +33,7 @@ body {
     z-index: 9999;
     right: 0;
     background-color: #2e2e2e;
-    width: 150px;
+    width: 170px;
     text-align: right;
 }
 .has-sub-menu:hover .sub-menu {
@@ -46,7 +47,7 @@ body {
     position: absolute;
     right: 10px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     #menu {
         display: none;
     }
