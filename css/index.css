@@ -29,6 +29,7 @@ body {
 .sub-menu {
     display: none;
     position: absolute;
+    z-index: 9999;
     right: 0;
     background-color: #2e2e2e;
     width: 150px;
@@ -59,7 +60,7 @@ body {
         justify-content: center;
         flex-direction: column;
         background-color: #141414;
-        z-index: 1033;
+        z-index: 9999;
     }
     #menu.mobile-open-menu .sub-menu {
         position: static;
@@ -76,6 +77,7 @@ body {
         display: block;
     }
 }
+
 
 
 
