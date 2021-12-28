@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Hotdog",
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Ketchup & Mustard",
+                    "price": "5.90",
+                    "picture": "image/foods/1/1.jpg"
+                },
+                {
+                    "id": "2",
+                    "name": "Chilli Cheese",
+                    "price": "6.90",
+                    "picture": "image/foods/1/2.png"
+                }
+            ],
+            "sizes": [
+                {
+                    "id": "1",
+                    "name": "Normal",
+                    "price": "0.00"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Popcorn",
+            "types": [
+                {
+                    "id": "1",
+                    "name": "Popcorn",
+                    "price": "8.90",
+                    "picture": "image/foods/2/1.png"
+                }
+            ],
+            "sizes": [
+                {
+                    "id": "5",
+                    "size": "Small",
+                    "price": "0.00"
+                },
+                {
+                    "id": "6",
+                    "size": "Medium",
+                    "price": "3.00"
+                },
+                {
+                    "id": "7",
+                    "size": "Large",
+                    "price": "5.00"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Single Combo : 1 small popcorn + 1 regular soft drink",
+            "price": "13.00",
+            "picture": "image/combos/1.png"
+        },
+        {
+            "id": "2",
+            "name": "Share Combo : 1 medium popcorn + 2 regular soft drink",
+            "price": "22.00",
+            "picture": "image/combos/2.png"
+        },
+        {
+            "id": "3",
+            "name": "Family Combo : 1 large popcorn + 4 regular soft drink",
+            "price": "45.00",
+            "picture": "image/combos/3.png"
+        }
+    ]
+}

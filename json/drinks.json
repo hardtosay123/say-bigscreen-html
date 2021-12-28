@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Soft Drinks",
+            "picture": "image/drinks/1.PNG",
+            "types": [
+                {
+                    "id": "1",
+                    "name": "100 Plus"
+                },
+                {
+                    "id": "2",
+                    "name": "7Up"
+                },
+                {
+                    "id": "3",
+                    "name": "Pepsi"
+                },
+                {
+                    "id": "4",
+                    "name": "Fanta"
+                },
+                {
+                    "id": "5",
+                    "name": "Coca Cola"
+                }
+            ],
+            "sizes": [
+                {
+                    "id": "1",
+                    "name": "Regular",
+                    "price": "5.90"
+                },
+                {
+                    "id": "2",
+                    "name": "Large",
+                    "price": "6.90"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Drinks",
+            "picture": "image/drinks/2.png",
+            "types": [
+                {
+                    "id": "6",
+                    "name": "Mineral Water"
+                }
+            ],
+            "sizes": [
+                {
+                    "id": "3",
+                    "name": "500ml",
+                    "price": "2.00"
+                }
+            ]
+        }
+    ]
+}

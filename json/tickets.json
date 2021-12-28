@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "timeline_name": "Before 12 PM",
+            "categories": [
+                {
+                    "id": "1",
+                    "name": "Adult",
+                    "price": "10.00"
+                },
+                {
+                    "id": "2",
+                    "name": "Kids below 12",
+                    "price": "9.00"
+                },
+                {
+                    "id": "3",
+                    "name": "Senior Citizen / OKU",
+                    "price": "9.00"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "timeline_name": "After 12 PM",
+            "categories": [
+                {
+                    "id": "4",
+                    "name": "Adult",
+                    "price": "12.00"
+                },
+                {
+                    "id": "5",
+                    "name": "Kids below 12",
+                    "price": "9.00"
+                },
+                {
+                    "id": "6",
+                    "name": "Senior Citizen / OKU",
+                    "price": "9.00"
+                }
+            ]
+        }
+    ]
+}

@@ -16,8 +16,8 @@
                 "Christoph Waltz",
                 "Ralph Fiennes"
             ],
-            "poster": "image/movie/1/poster.jpg",
-            "carousel": "image/movie/1/carousel.png",
+            "poster": "image/movies/1/poster.jpg",
+            "carousel": "image/movies/1/carousel.png",
             "running_time": "163",
             "show_time": [
                 {
@@ -57,6 +57,441 @@
                         {
                             "id": "1",
                             "name": "Hall 1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Spider-Man: No Way Home",
+            "directed_by": "Jon Watts",
+            "release_date": "13 December 2021",
+            "actors": [
+                "Tom Holland",
+                "Zendaya",
+                "Benedict Cumberbatch",
+                "Jacob Batalon",
+                "Jon Favreau",
+                "Jamie Foxx",
+                "Willem Dafoe",
+                "Alfred Molina",
+                "Benedict Wong",
+                "Tony Revolori",
+                "Marisa Tomei",
+                "Andrew Garfield",
+                "Tobey Maguire"
+            ],
+            "poster": "image/movies/2/poster.jpg",
+            "carousel": "image/movies/2/carousel.jpg",
+            "running_time": "148",
+            "show_time": [
+                {
+                    "id": "5",
+                    "time": "2021-12-23T04:15:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "6",
+                    "time": "2021-12-24T11:00:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "7",
+                    "time": "2021-12-25T06:30:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "8",
+                    "time": "2021-12-26T08:45:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "The Matrix Resurrections",
+            "directed_by": "Lana Wachowski",
+            "release_date": "16 December 2021",
+            "actors": [
+                "Keanu Reeves",
+                "Carrie-Anne Moss",
+                "Yahya Abdul-Mateen II",
+                "Jessica Henwick",
+                "Jonathan Groff",
+                "Neil Patrick Harris",
+                "Priyanka Chopra Jonas",
+                "Jada Pinkett Smith"
+            ],
+            "poster": "image/movies/3/poster.jpg",
+            "carousel": "image/movies/3/carousel.jpg",
+            "running_time": "148",
+            "show_time": [
+                {
+                    "id": "9",
+                    "time": "2021-12-23T06:30:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "10",
+                    "time": "2021-12-24T08:45:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "11",
+                    "time": "2021-12-25T04:15:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "12",
+                    "time": "2021-12-26T11:00:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Ghostbusters: Afterlife",
+            "directed_by": "Jason Reitman",
+            "release_date": "23 August 2021",
+            "actors": [
+                "Carrie Coon",
+                "Finn Wolfhard",
+                "Mckenna Grace",
+                "Paul Rudd",
+                "Logan Kim",
+                "Celeste O'Connor",
+                "Bill Murray",
+                "Dan Aykroyd",
+                "Ernie Hudson",
+                "Annie Potts",
+                "Sigourney Weaver"
+            ],
+            "poster": "image/movies/4/poster.jpg",
+            "carousel": "image/movies/4/carousel.jpg",
+            "running_time": "124",
+            "show_time": [
+                {
+                    "id": "13",
+                    "time": "2021-12-23T11:00:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "14",
+                    "time": "2021-12-24T04:15:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "15",
+                    "time": "2021-12-25T08:45:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "16",
+                    "time": "2021-12-26T06:30:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "1",
+                            "name": "Hall 1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Red Notice",
+            "directed_by": "Rawson Marshall Thurber",
+            "release_date": "5 November 2021",
+            "actors": [
+                "Dwayne Johnson",
+                "Ryan Reynolds",
+                "Gal Gadot",
+                "Ritu Arya",
+                "Chris Diamantopoulos"
+            ],
+            "poster": "image/movies/5/poster.jpg",
+            "carousel": "image/movies/5/carousel.jpg",
+            "running_time": "118",
+            "show_time": [
+                {
+                    "id": "17",
+                    "time": "2021-12-23T04:15:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "18",
+                    "time": "2021-12-24T11:00:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "19",
+                    "time": "2021-12-25T06:30:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "20",
+                    "time": "2021-12-26T08:45:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "Free Guy",
+            "directed_by": "Shawn Levy",
+            "release_date": "10 August 2021",
+            "actors": [
+                "Ryan Reynolds",
+                "Jodie Comer",
+                "Lil Rel Howery",
+                "Utkarsh Ambudkar",
+                "Joe Keery",
+                "Taika Waititi"
+            ],
+            "poster": "image/movies/6/poster.jpg",
+            "carousel": "image/movies/6/carousel.png",
+            "running_time": "115",
+            "show_time": [
+                {
+                    "id": "21",
+                    "time": "2021-12-23T06:30:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "22",
+                    "time": "2021-12-24T08:45:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "23",
+                    "time": "2021-12-25T04:15:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "24",
+                    "time": "2021-12-26T11:00:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "name": "Fast & Furious 9: The Fast Saga",
+            "directed_by": "Justin Lin",
+            "release_date": "19 May 2021",
+            "actors": [
+                "Vin Diesel",
+                "Michelle Rodriguez",
+                "Tyrese Gibson",
+                "Chris Ludacris Bridges",
+                "John Cena",
+                "Nathalie Emmanuel",
+                "Jordana Brewster",
+                "Sung Kang",
+                "Helen Mirren",
+                "Kurt Russell",
+                "Charlize Theron"
+            ],
+            "poster": "image/movies/7/poster.jpg",
+            "carousel": "image/movies/7/carousel.png",
+            "running_time": "143",
+            "show_time": [
+                {
+                    "id": "25",
+                    "time": "2021-12-23T08:45:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "26",
+                    "time": "2021-12-24T06:30:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "27",
+                    "time": "2021-12-25T11:00:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "28",
+                    "time": "2021-12-26T04:15:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "name": "King Kong vs. Godzilla",
+            "directed_by": "Adam Wingard",
+            "release_date": "24 March 2021",
+            "actors": [
+                "Alexander Skarsgård",
+                "Millie Bobby Brown",
+                "Rebecca Hall",
+                "Brian Tyree Henry",
+                "Shun Oguri",
+                "Eiza González",
+                "Julian Dennison",
+                "Lance Reddick",
+                "Kyle Chandler",
+                "Demián Bichir"
+            ],
+            "poster": "image/movies/8/poster.jpg",
+            "carousel": "image/movies/8/carousel.png",
+            "running_time": "113",
+            "show_time": [
+                {
+                    "id": "29",
+                    "time": "2021-12-23T11:00:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "30",
+                    "time": "2021-12-24T04:15:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "31",
+                    "time": "2021-12-25T08:45:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
+                        }
+                    ]
+                },
+                {
+                    "id": "32",
+                    "time": "2021-12-26T06:30:00.000Z",
+                    "rooms": [
+                        {
+                            "id": "2",
+                            "name": "Hall 2"
                         }
                     ]
                 }

@@ -49,13 +49,13 @@
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="image/movie/Spider-Man_No_Way_Home/carousel.jpg" class="d-block w-100" alt="Spider-Man No Way Home">
+                    <img src="image/movies/1/carousel.png" class="d-block w-100" alt="Spider-Man No Way Home">
                   </div>
                   <div class="carousel-item">
-                    <img src="image/movie/The_Matrix_Resurrections/carousel.jpg" class="d-block w-100" alt="The Matrix Resurrections">
+                    <img src="image/movies/2/carousel.jpg" class="d-block w-100" alt="The Matrix Resurrections">
                   </div>
                   <div class="carousel-item">
-                    <img src="image/movie/1/carousel.png" class="d-block w-100" alt="James Bond No Time to Die">
+                    <img src="image/movies/3/carousel.jpg" class="d-block w-100" alt="James Bond No Time to Die">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
@@ -71,6 +71,7 @@
     </div>
     <script>
         $(document).ready(function () {
+            // Start of Menu Navigation Bar
             $("#mobile-nav").click(function () {
                 if ($(this).hasClass("bi-list")) {
                     $("#logo").addClass("position-relative");
@@ -93,6 +94,7 @@
             $("#expand-sub-menu").click(function () {
                 $("#sub-menu").toggleClass("sub-menu-expanded");
             });
+            // End of Menu Navigation Bar
         });
     </script>
 </body>
