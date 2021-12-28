@@ -47,7 +47,7 @@
     <div class="container">
         <div class="w-100">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+                <div id="carouselContainer" class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="image/movies/1/carousel.png" class="d-block w-100" alt="Spider-Man No Way Home">
                   </div>
@@ -95,6 +95,43 @@
                 $("#sub-menu").toggleClass("sub-menu-expanded");
             });
             // End of Menu Navigation Bar
+
+
+
+            // Start of Load Carousel Slideshow
+            var movies_results = null;
+            function load_carousel() {
+                if (movies_results != null && movies_results.length > 0) {
+                    $("#carouselContainer").html("");
+                    for (var i = 0; i < movies_results.length; i++) {
+                        var slideShowHTML = "";
+                        if (i == 0) {
+                            slideShowHTML += "<div class=\"carousel-item active\">";
+                        }
+                        else {
+                            slideShowHTML += "<div class=\"carousel-item\">";
+                        }
+                        slideShowHTML += "<img src=\"" + movies_results[i].carousel + "\" class=\"d-block w-100\" alt=\"" + movies_results[i].name + "\">";
+                        slideShowHTML += "</div>";
+                        $("#carouselContainer").append(slideShowHTML);
+                    }
+                }
+            }
+            $.ajax({
+                url: "./json/movies.json",
+                type: "GET",
+                dataType: "json",
+                success: function(data) {
+                    movies_results = data.data;
+                    load_carousel();
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.log(jqXHR);
+                    console.log(textStatus);
+                    console.log(errorThrown);
+                }
+            });
+            // End of Load Carousel Slideshow
         });
     </script>
 </body>
