@@ -82,8 +82,18 @@ body {
 
 
 
+#swiper1 {
+    width: 100%;
+}
 
-
+.bg-slideshow {
+    background-image: url('../image/background-images/blackslideshow.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+#swiper2 {
+    width: 100%;
+}
 
 
 
