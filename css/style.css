@@ -82,3 +82,10 @@ body {
 #first-content {
     margin-top: 46px;
 }
+
+.bg-darkgrey {
+    background-color: #171717;
+}
+.footer-font {
+    font-size: 1.25rem;
+}

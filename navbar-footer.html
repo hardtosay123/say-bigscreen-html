@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Screen - Movie / Now Showing</title>
+    <title>Big Screen - Home</title>
     <link rel="stylesheet" href="dist/bootstrap-4.6.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/bootstrap-icons-1.7.2/bootstrap-icons.css" />
     <link rel="stylesheet" href="dist/fontawesome-5.15.4/css/all.min.css" />
@@ -14,7 +14,6 @@
     <script src="dist/bootstrap-4.6.1/js/bootstrap.min.js"></script>
     <script src="dist/swiper-7.4.1/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/movie-now-showing.css" />
 </head>
 <body>
     <div id="menu-navbar" class="fixed-top">
@@ -47,17 +46,59 @@
             </div>
         </div>
     </div>
-    <div id="first-content">
-        <div class="py-2">
-            <div class="select-title select-title-height">
-                <div class="container">
-                    <label class="mb-0 select-title-label-height text-white">Select Date</label>
+    <div class="bg-darkgrey w-100 user-select-none border-top border-bottom border-secondary footer-font">
+        <div class="py-5">
+            <div class="container-fluid">
+                <div class="px-5">
+                    <div class="row align-items-center text-white">
+                        <div class="col-12 col-lg-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="movie-now-showing.html" class="text-decoration-none text-center text-white font-weight-bold mb-3">Movie / Now Showing</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="" class="text-decoration-none text-center text-white font-weight-bold mb-3">Promotions</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="" class="text-decoration-none text-center text-white font-weight-bold mb-3">Food & Beverages</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <p class="font-weight-bold text-center">Help <i class="bi bi-chevron-down d-lg-none"></i></p>
+                                <a href="" class="text-decoration-none text-center text-white mb-3">About Us</a>
+                                <a href="" class="text-decoration-none text-center text-white mb-3">Feedback</a>
+                                <a href="" class="text-decoration-none text-center text-white mb-3">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-darkgrey w-100 user-select-none border-bottom border-dark footer-font">
+        <div class="py-3">
+            <div class="container-fluid">
+                <div class="px-5">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="mb-0 text-center text-white font-weight-bold mr-3">Connect With Us :</p>
+                        <a href="https://www.facebook.com" target="_blank" class="text-decoration-none text-center text-white mr-3">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-decoration-none text-center text-white mr-3">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script>
         $(document).ready(function () {
+
             // Start of Menu Navigation Bar
             $("#mobile-nav").click(function () {
                 if ($(this).hasClass("bi-list")) {
