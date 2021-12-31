@@ -11,10 +11,11 @@
     <script src="dist/jquery-3.6.0/jquery-3.6.0.min.js"></script>
     <script src="dist/popper-2.11.0/popper.min.js"></script>
     <script src="dist/bootstrap-4.6.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/movie-now-showing.css" />
 </head>
 <body>
-    <div id="menu-navbar">
+    <div id="menu-navbar" class="fixed-top">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <a href="index.html" id="logo" class="font-weight-bold text-decoration-none text-white py-2 user-select-none"><span class="logo-yellow">Big</span> Screen</a>
@@ -44,10 +45,12 @@
             </div>
         </div>
     </div>
-    <div class="my-2">
-        <div class="select-title select-title-height">
-            <div class="container">
-                <label class="mb-0 select-title-label-height text-white">Select Date</label>
+    <div id="first-content">
+        <div class="py-2">
+            <div class="select-title select-title-height">
+                <div class="container">
+                    <label class="mb-0 select-title-label-height text-white">Select Date</label>
+                </div>
             </div>
         </div>
     </div>
