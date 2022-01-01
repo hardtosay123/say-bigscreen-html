@@ -19,6 +19,10 @@
             "poster": "image/movies/1/poster.jpg",
             "carousel": "image/movies/1/carousel.png",
             "running_time": "163",
+            "movieType": "Action, Adventure, Thriller",
+            "movieClassification": "PG-13",
+            "movieLanguege": "English",
+            "movieDescription": "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
             "show_time": [
                 {
                     "id": "1",
@@ -85,6 +89,10 @@
             "poster": "image/movies/2/poster.jpg",
             "carousel": "image/movies/2/carousel.jpg",
             "running_time": "148",
+            "movieType": "Action, Adventure, Fantasy",
+            "movieClassification": "PG-13",
+            "movieLanguege": "English",
+            "movieDescription": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
             "show_time": [
                 {
                     "id": "5",
@@ -146,6 +154,10 @@
             "poster": "image/movies/3/poster.jpg",
             "carousel": "image/movies/3/carousel.jpg",
             "running_time": "148",
+            "movieType": "Action, Sci-Fi",
+            "movieClassification": "R",
+            "movieLanguege": "English",
+            "movieDescription": "Return to a world of two realities: one, everyday life; the other, what lies behind it. To find out if his reality is a construct, to truly know himself, Mr. Anderson will have to choose to follow the white rabbit once more.",
             "show_time": [
                 {
                     "id": "9",
@@ -210,6 +222,10 @@
             "poster": "image/movies/4/poster.jpg",
             "carousel": "image/movies/4/carousel.jpg",
             "running_time": "124",
+            "movieType": "Action, Comedy, Fantasy",
+            "movieClassification": "PG-13",
+            "movieLanguege": "English",
+            "movieDescription": "When a single mom and her two kids arrive in a small town, they begin to discover their connection to the original Ghostbusters and the secret legacy their grandfather left behind",
             "show_time": [
                 {
                     "id": "13",
@@ -268,6 +284,10 @@
             "poster": "image/movies/5/poster.jpg",
             "carousel": "image/movies/5/carousel.jpg",
             "running_time": "118",
+            "movieType": "Action, Comedy, Thriller",
+            "movieClassification": "PG-13",
+            "movieLanguege": "English",
+            "movieDescription": "An Interpol agent tracks the world's most wanted art thief.",
             "show_time": [
                 {
                     "id": "17",
@@ -327,6 +347,10 @@
             "poster": "image/movies/6/poster.jpg",
             "carousel": "image/movies/6/carousel.png",
             "running_time": "115",
+            "movieType": "Action, Adventure, Comedy",
+            "movieClassification": "PG-13",
+            "movieLanguege": "English",
+            "movieDescription": "A bank teller discovers that he's actually an NPC inside a brutal, open world video game.",
             "show_time": [
                 {
                     "id": "21",
@@ -391,6 +415,10 @@
             "poster": "image/movies/7/poster.jpg",
             "carousel": "image/movies/7/carousel.png",
             "running_time": "143",
+            "movieType": "Action, Crime, Thriller",
+            "movieClassification": "PG-13",
+            "movieLanguege": "English",
+            "movieDescription": "Dom and the crew must take on an international terrorist who turns out to be Dom and Mia's estranged brother.",
             "show_time": [
                 {
                     "id": "25",
@@ -454,6 +482,10 @@
             "poster": "image/movies/8/poster.jpg",
             "carousel": "image/movies/8/carousel.png",
             "running_time": "113",
+            "movieType": "Action, Sci-Fi, Thriller",
+            "movieClassification": "PG-13",
+            "movieLanguege": "English",
+            "movieDescription": "The epic next chapter in the cinematic Monsterverse pits two of the greatest icons in motion picture history against one another - the fearsome Godzilla and the mighty Kong - with humanity caught in the balance.",
             "show_time": [
                 {
                     "id": "29",
