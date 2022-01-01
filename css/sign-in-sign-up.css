@@ -1,0 +1,9 @@
+.sign-in-button, .sign-up-button {
+    background-color: #33cccc;
+    color: white;
+}
+.sign-in-button:hover,.sign-in-button:active,.sign-in-button:focus, .sign-up-button:hover,.sign-up-button:active,.sign-up-button:focus {
+    background-color: #47d1d1;
+    color: white;
+    box-shadow: 0 4px 8px 0 #47d1d1, 0 6px 20px 0 #47d1d1;
+}
