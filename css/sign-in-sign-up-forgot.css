@@ -1,0 +1,9 @@
+.sign-in-button, .sign-up-button, .forgot-password-button {
+    background-color: #cc3333;
+    color: white;
+}
+.sign-in-button:hover,.sign-in-button:active,.sign-in-button:focus, .sign-up-button:hover,.sign-up-button:active,.sign-up-button:focus, .forgot-password-button:hover,.forgot-password-button:active,.forgot-password-button:focus {
+    background-color: #d14747;
+    color: white;
+    box-shadow: 0 4px 8px 0 #d14747, 0 6px 20px 0 #d14747;
+}
