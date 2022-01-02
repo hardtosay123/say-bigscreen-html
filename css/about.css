@@ -1,0 +1,14 @@
+.bg-slideshow {
+    background-image: url('../image/background-images/blackslideshow.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+.about-desc-paragraph {
+    font-size: 1.3rem;
+}
+.text-red {
+    color: red;
+}
+.text-yellow {
+    color: yellow;
+}

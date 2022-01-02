@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Screen - Login</title>
+    <title>Big Screen - About Us</title>
     <link rel="stylesheet" href="dist/bootstrap-4.6.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/bootstrap-icons-1.7.2/bootstrap-icons.css" />
     <link rel="stylesheet" href="dist/fontawesome-5.15.4/css/all.min.css" />
@@ -14,7 +14,7 @@
     <script src="dist/bootstrap-4.6.1/js/bootstrap.min.js"></script>
     <script src="dist/swiper-7.4.1/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/sign-in-sign-up-forgot.css" />
+    <link rel="stylesheet" href="css/about.css" />
 </head>
 <body>
     <div id="menu-navbar" class="fixed-top">
@@ -48,28 +48,16 @@
         </div>
     </div>
     <div id="first-content" class="container user-select-none">
-        <div class="row min-vh-100">
-            <div class="col-12 col-xl-4 m-auto">
-                <form style="display: none;" id="sign-in-form" class="bg-light rounded p-3">
-                    <h2 class="mb-5">Sign In</h2>
-                    <div class="form-group">
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="sr-only">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label for="remember"><input type="checkbox" id="remember"> Remember Me</label>
-                    </div>
-                    <div class="form-group">
-                        <p>Not registered? <a href="signup.html">Sign Up</a> | <a href="forgot-password.html">Forgot Password?</a></p>
-                    </div>
-                    <div class="mt-5 form-group">
-                        <button type="button" class="btn btn-lg sign-in-button">Sign In</button>
-                    </div>
-                </form>
+        <div class="d-flex justify-content-center align-items-center min-vh-100">
+            <div class="w-100 my-5">
+                <div style="display: none;" id="about-us" class="bg-slideshow p-3 p-lg-5 rounded text-white">
+                    <h1 class="text-justify text-break text-red text-uppercase">About Us</h1>
+                    <p class="text-justify text-break about-desc-paragraph">Big Screen Cinema was established in the early of 2020 in the heart of Labuan that aims to provide exclusive cinematic experience to the community, bringing people to meet and enjoy the pleasuring environment for a complete enjoyment.</p>
+                    <h2 class="text-justify text-break text-yellow text-uppercase text-center">Mission</h2>
+                    <p class="text-justify text-break about-desc-paragraph text-center">To be the premier cinema that provides satisfactory service and deluxe environment.</p>
+                    <h2 class="text-justify text-break text-yellow text-uppercase text-center">Vision</h2>
+                    <p class="text-justify text-break about-desc-paragraph text-center mb-0">An entertainment business fostering genuine bond with the local community through an immersive surroundings and latest equipped innovation for a fulfilling experience.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -145,7 +133,8 @@
                 $("#sub-menu").toggleClass("sub-menu-expanded");
             });
             // End of Menu Navigation Bar
-            $("#sign-in-form").fadeIn();
+
+            $("#about-us").fadeIn();
         });
     </script>
 </body>
