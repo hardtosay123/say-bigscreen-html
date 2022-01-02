@@ -46,8 +46,14 @@
             </div>
         </div>
     </div>
-    <div id="first-content">
-        
+    <div id="first-content" class="container user-select-none">
+        <div class="d-flex justify-content-center align-items-center min-vh-100">
+            <div class="w-100 my-5">
+                <div style="display: none;" id="not-available" class="alert alert-warning" role="alert">
+                    <h1 class="text-justify text-break text-center">Not Available</h1>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="bg-darkgrey w-100 user-select-none border-top border-bottom border-secondary footer-font">
         <div class="py-5">
@@ -96,7 +102,6 @@
     </div>
     <script>
         $(document).ready(function () {
-
             // Start of Menu Navigation Bar
             $("#mobile-nav").click(function () {
                 if ($(this).hasClass("bi-list")) {
@@ -121,6 +126,8 @@
                 $("#sub-menu").toggleClass("sub-menu-expanded");
             });
             // End of Menu Navigation Bar
+
+            $("#not-available").fadeIn();
         });
     </script>
 </body>
