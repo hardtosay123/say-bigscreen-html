@@ -14,7 +14,7 @@
     <script src="dist/bootstrap-4.6.1/js/bootstrap.min.js"></script>
     <script src="dist/swiper-7.4.1/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/movie-now-showing.css" />
+    <link rel="stylesheet" href="css/ticket.css" />
 </head>
 <body>
     <div id="menu-navbar" class="fixed-top">
@@ -90,11 +90,11 @@
                                         <div class="d-flex justify-content-center align-items-center">
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
-                                                    <button class="btn ticket-btn" type="button" onclick="minusSeat('adult')">-</button>
+                                                    <button class="btn plus-and-minus-btn" type="button" onclick="minusSeat('adult')">-</button>
                                                 </div>
                                                 <input type="number" id="adult" class="form-control text-center bg-body text-white" name="adult" value="0" placeholder="" min="0" >
                                                 <div class="input-group-append">
-                                                    <button class="btn ticket-btn" type="button" onclick="plusSeat('adult')">+</button>
+                                                    <button class="btn plus-and-minus-btn" type="button" onclick="plusSeat('adult')">+</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -106,11 +106,11 @@
                                         <div class="d-flex justify-content-center align-items-center">
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
-                                                    <button class="btn ticket-btn" type="button" onclick="minusSeat('children')">-</button>
+                                                    <button class="btn plus-and-minus-btn" type="button" onclick="minusSeat('children')">-</button>
                                                 </div>
                                                 <input type="number" id="children" class="form-control text-center bg-body text-white" name="children" value="0" placeholder="" min="0" >
                                                 <div class="input-group-append">
-                                                    <button class="btn ticket-btn" type="button" onclick="plusSeat('children')">+</button>
+                                                    <button class="btn plus-and-minus-btn" type="button" onclick="plusSeat('children')">+</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -122,11 +122,11 @@
                                         <div class="d-flex justify-content-center align-items-center">
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
-                                                    <button class="btn ticket-btn" type="button" onclick="minusSeat('OKU')">-</button>
+                                                    <button class="btn plus-and-minus-btn" type="button" onclick="minusSeat('OKU')">-</button>
                                                 </div>
                                                 <input type="number" id="OKU" class="form-control text-center bg-body text-white" name="OKU" value="0" placeholder="" min="0" >
                                                 <div class="input-group-append">
-                                                    <button class="btn ticket-btn" type="button" onclick="plusSeat('OKU')">+</button>
+                                                    <button class="btn plus-and-minus-btn" type="button" onclick="plusSeat('OKU')">+</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -138,11 +138,11 @@
                                         <div class="d-flex justify-content-center align-items-center">
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
-                                                    <button class="btn ticket-btn" type="button" onclick="minusSeat('senior')">-</button>
+                                                    <button class="btn plus-and-minus-btn" type="button" onclick="minusSeat('senior')">-</button>
                                                 </div>
                                                 <input type="number" id="senior" class="form-control text-center bg-body text-white" name="senior" value="0" placeholder="" min="0" >
                                                 <div class="input-group-append">
-                                                    <button class="btn ticket-btn" type="button" onclick="plusSeat('senior')">+</button>
+                                                    <button class="btn plus-and-minus-btn" type="button" onclick="plusSeat('senior')">+</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -165,7 +165,7 @@
             <div class="py-3">
                 <div class="container">
                     <div class="w-100">
-                        <button type="submit" class="btn btn-block text-uppercase confirm-button-available">Confirm</button>
+                        <button type="submit" class="btn btn-block text-uppercase confirm-button">Confirm</button>
                     </div>
                 </div>
             </div>
@@ -361,10 +361,7 @@
                 }
             }
 
-
-            
-
-            //$("#ticket").html("hahah");
+            updatePrice();
         });
     </script>
 </body>

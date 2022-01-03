@@ -1,0 +1,31 @@
+.select-title {
+    background-color: #141414;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.select-title-height {
+    height: 54px;
+}
+label.select-title-label-height {
+    line-height: 54px;
+}
+
+
+.bg-body {
+    background-color: #000;
+}
+input.bg-body:focus,input.bg-body:active {
+    background-color: #000;
+}
+
+.plus-and-minus-btn {
+    color: black;
+    background-color: #FFEE00;
+}
+
+.confirm-button {
+    background-color: #FFEE00;
+}
+.confirm-button:hover {
+    background-color: #e0d100;
+}
