@@ -531,8 +531,16 @@
                         var seat_number = seat_name_prefix[r] + (i+1).toString();
                         var seat_html = "<label for=\"" + seat_number + "\" class=\"seat-circle seat-available\"></label>";
                         seat_html += "<input type=\"checkbox\" id=\"" + seat_number + "\" class=\"d-none\" name=\"seat[]\" value=\"" + seat_number + "\" />";
+
+                        var seat_buyed = "<div class=\"seat-circle seat-unavailable\" title=\"Buyed by someone else! Not Available!\"></div>";
                         if (seat_to_arrange[i] == 1) {
-                            $("#seat").append(seat_html);
+                            
+                            if (r == 1 && (i == 10 || i == 11)) {
+                                $("#seat").append(seat_buyed);
+                            }
+                            else {
+                                $("#seat").append(seat_html);
+                            }
                         }
                         else {
                             $("#seat").append(seatSOP_html);

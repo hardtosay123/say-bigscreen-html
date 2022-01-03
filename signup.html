@@ -133,7 +133,6 @@
     </div>
     <script>
         $(document).ready(function () {
-
             // Start of Menu Navigation Bar
             $("#mobile-nav").click(function () {
                 if ($(this).hasClass("bi-list")) {
@@ -167,6 +166,9 @@
                             "</button>"+
                         "</div>";
                 $("#alert").html(alertHTML);
+                setTimeout(function () {
+                    window.location.href = "./login.html";
+                }, 3000);
             });
         });
     </script>
