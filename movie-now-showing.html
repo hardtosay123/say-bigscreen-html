@@ -48,82 +48,123 @@
         </div>
     </div>
     <div id="first-content">
-        <div class="py-2">
-            <div class="select-title select-title-height">
+        <form action="./ticket.html" method="get" onsubmit="return checkAllValidation()">
+            <div class="py-2">
+                <div class="select-title select-title-height">
+                    <div class="container">
+                        <label class="mb-0 select-title-label-height text-white">Select Date</label>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
                 <div class="container">
-                    <label class="mb-0 select-title-label-height text-white">Select Date</label>
-                </div>
-            </div>
-        </div>
-        <div class="py-3">
-            <div class="container">
-                <div id="dateSelect" class="d-flex flex-column flex-md-row">
-                    <div class="d-flex justify-content-center align-items-center flex-column user-select-none mr-md-5">
-                        <span class="weekday-name text-white d-block text-center mb-3">Sunday</span>
-                        <div class="date-circle border text-center d-flex justify-content-center align-items-center">
-                            <span>1</span>
+                    <div id="dateSelect" class="d-flex flex-column flex-md-row">
+                        <div class="d-flex justify-content-center align-items-center flex-column user-select-none mr-md-5">
+                            <span class="weekday-name text-white d-block text-center mb-3">Sunday</span>
+                            <div class="date-circle border text-center d-flex justify-content-center align-items-center">
+                                <span>1</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column user-select-none mr-md-5">
-                        <span class="weekday-name text-white d-block text-center mb-3">Monday</span>
-                        <div class="date-circle border text-center d-flex justify-content-center align-items-center">
-                            <span>2</span>
+                        <div class="d-flex justify-content-center align-items-center flex-column user-select-none mr-md-5">
+                            <span class="weekday-name text-white d-block text-center mb-3">Monday</span>
+                            <div class="date-circle border text-center d-flex justify-content-center align-items-center">
+                                <span>2</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column user-select-none mr-md-5">
-                        <span class="weekday-name text-white d-block text-center mb-3">Tuesday</span>
-                        <div class="date-circle border text-center d-flex justify-content-center align-items-center">
-                            <span>3</span>
+                        <div class="d-flex justify-content-center align-items-center flex-column user-select-none mr-md-5">
+                            <span class="weekday-name text-white d-block text-center mb-3">Tuesday</span>
+                            <div class="date-circle border text-center d-flex justify-content-center align-items-center">
+                                <span>3</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column user-select-none mr-md-5">
-                        <span class="weekday-name text-white d-block text-center mb-3">Wednesday</span>
-                        <div class="date-circle border text-center d-flex justify-content-center align-items-center">
-                            <span>4</span>
+                        <div class="d-flex justify-content-center align-items-center flex-column user-select-none mr-md-5">
+                            <span class="weekday-name text-white d-block text-center mb-3">Wednesday</span>
+                            <div class="date-circle border text-center d-flex justify-content-center align-items-center">
+                                <span>4</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="py-2">
-            <div class="select-title select-title-height">
+            <div class="py-2">
+                <div class="select-title select-title-height">
+                    <div class="container">
+                        <label class="mb-0 select-title-label-height text-white">Select Movie</label>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
                 <div class="container">
-                    <label class="mb-0 select-title-label-height text-white">Select Movie</label>
-                </div>
-            </div>
-        </div>
-        <div class="py-3">
-            <div class="container">
-                <div id="swiper1" class="swiper mySwiper user-select-none">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
+                    <div id="swiper1" class="swiper mySwiper user-select-none">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                        </div>
+                        <div class="swiper-button-next text-white"></div>
+                        <div class="swiper-button-prev text-white"></div>
                     </div>
-                    <div class="swiper-button-next text-white"></div>
-                    <div class="swiper-button-prev text-white"></div>
                 </div>
             </div>
-        </div>
-        <div class="py-2">
-            <div class="select-title select-title-height">
+            <div class="py-2">
+                <div class="select-title select-title-height">
+                    <div class="container">
+                        <label class="mb-0 select-title-label-height text-white">Movie Description</label>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
                 <div class="container">
-                    <label class="mb-0 select-title-label-height text-white">Select Time</label>
-                </div>
-            </div>
-        </div>
-        <div class="py-3">
-            <div class="container">
-                <div id="time" class="text-white">
+                    <div id="movie-description" class="text-white">
 
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="py-2">
+                <div class="select-title select-title-height">
+                    <div class="container">
+                        <label class="mb-0 select-title-label-height text-white">Select Time</label>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="container">
+                    <div class="text-white">
+                        <div id="time" class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100">
+                <div style="display: none;" id="masking" class="position-fixed"></div>
+                <div style="display: none;" id="popup" class="seat-container p-3 border position-fixed">
+                    <div class="close-popup">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <i id="close-times" class="far fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <div class="cinema-hall-screen mb-5">
+                        <div id="screen" class="w-100">
+                            <h4 class="text-white text-center text-uppercase user-select-none">Screen</h4>
+                        </div>
+                    </div>
+                    <div id="seat" class="select-seat-container">
+                        
+                    </div>
+                </div>
+                <div style="display: none;" id="confirm-seat" class="position-fixed">
+                    <div class="bg-light">
+                        <button type="submit" id="confirm-button" class="btn btn-block text-center text-uppercase">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
     <div class="bg-darkgrey w-100 user-select-none border-top border-bottom border-secondary footer-font">
         <div class="py-5">
@@ -171,6 +212,31 @@
         </div>
     </div>
     <script>
+        function checkAllValidation() {
+            var flag = false;
+
+            var date_validate = $("input[type=\"radio\"][name=\"date\"]:checked").val();
+            var movie_index_validate = $("input[type=\"radio\"][name=\"movie_index\"]:checked").val();
+            var time_validate = $("input[type=\"radio\"][name=\"time\"]:checked").val();
+            var seat_validate = [];
+            $("input[type=\"checkbox\"][name=\"seat[]\"]:checked").each(function (index, elem) {
+                seat_validate.push($(this).val());
+            });
+            if (date_validate != null && date_validate != undefined) {
+                if (movie_index_validate != null && movie_index_validate != undefined) {
+                    if (time_validate != null && time_validate != undefined) {
+                        if (seat_validate != null && seat_validate != undefined && seat_validate.length > 0) {
+                            localStorage.setItem("date", date_validate);
+                            localStorage.setItem("movie_index", movie_index_validate);
+                            localStorage.setItem("time", time_validate);
+                            localStorage.setItem("seat", seat_validate);
+                            flag = true;
+                        }
+                    }
+                }
+            }
+            return flag;
+        }
         $(document).ready(function () {
             // Start of Menu Navigation Bar
             $("#mobile-nav").click(function () {
@@ -241,6 +307,7 @@
                         slideShowHTML += "<div class=\"swiper-slide\">";
                         slideShowHTML += "<img src=\"" + movies[i].poster + "\" class=\"w-100 mb-2\" alt=\"" + movies[i].name + "\">";
                         slideShowHTML += "<p class=\"mb-0 text-center text-white\">" + movies[i].name + "</p>";
+                        slideShowHTML += "<input type=\"radio\" class=\"d-none movieSelectRadio\" name=\"movie_index\" value=\"" + i + "\">";
                         slideShowHTML += "</div>";
                         $(".swiper-wrapper").append(slideShowHTML);
                     }
@@ -272,6 +339,11 @@
                             slideShadows: true,
                         },
                     });
+                    $(".movieSelectRadio").each(function(index,ele){
+                        if ($(ele).val() == 0) {
+                            $(ele).attr("checked", "true");
+                        }
+                    });
                 }
             }
 
@@ -282,6 +354,7 @@
                 success: function(data) {
                     movies = data.data;
                     loadSelectMovies();
+                    loadMovieDesc();
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     console.log(jqXHR);
@@ -310,6 +383,23 @@
 
             var user_select_date = null;
 
+            function loadMovieDesc() {
+                if (movies != null && swiper1 != null) {
+                    var moviesIndex = swiper1.activeIndex;
+                    var moviesInfo = movies[moviesIndex];
+                    var movie_desc_html = "<h4 class=\"text-break text-justify\">" + moviesInfo.name + "</h4>";
+                    movie_desc_html += "<p class=\"text-break text-justify\">Directed by : " + moviesInfo.directed_by + "</p>";
+                    movie_desc_html += "<p class=\"text-break text-justify\">Actors : " + moviesInfo.actors.join(", ") + "</p>";
+                    movie_desc_html += "<p class=\"text-break text-justify\">Release Date : " + moviesInfo.release_date + "</p>";
+                    movie_desc_html += "<p class=\"text-break text-justify\">Types : " + moviesInfo.movieType + "</p>";
+                    movie_desc_html += "<p class=\"text-break text-justify\">Language : " + moviesInfo.movieLanguege + "</p>";
+                    movie_desc_html += "<p class=\"text-break text-justify\">Classification : " + moviesInfo.movieClassification + "</p>";
+                    movie_desc_html += "<p class=\"text-break text-justify\">Running Time : " + moviesInfo.running_time + " minutes</p>";
+                    movie_desc_html += "<p class=\"text-break text-justify\">Description : " + moviesInfo.movieDescription + "</p>";
+                    $("#movie-description").html(movie_desc_html);
+                }
+            }
+
             function loadMovieTime() {
                 if (user_select_date != null && movies != null && swiper1 != null) {
                     var movies_index = swiper1.activeIndex;
@@ -317,8 +407,21 @@
                     $("#time").html("");
                     var movies_time = movies[movies_index].show_time;
                     var time_should_show = new Date(movies_time[(user_date.getDate()%4)].time);
-                    var time_html = "<p>" + ("0" + time_should_show.getHours().toString()).substr(-2) + ":" + ("0" + time_should_show.getMinutes().toString()).substr(-2) + " - " + movies_time[(user_date.getDate()%4)].rooms[0].name + "</p>";
+                    var time_html = "<div class=\"col-4 col-md-3 col-lg-2\">";
+                    time_html += "<label for=\"" + ("0" + time_should_show.getHours().toString()).substr(-2) + ":" + ("0" + time_should_show.getMinutes().toString()).substr(-2) + "\" class=\"d-flex justify-content-center align-items-center flex-column p-1 border rounded time-select user-select-none mb-0\">";
+                    time_html += "<span class=\"\">" + ("0" + time_should_show.getHours().toString()).substr(-2) + ":" + ("0" + time_should_show.getMinutes().toString()).substr(-2) + "</span>";
+                    time_html += "<span class=\"\">" + movies_time[(user_date.getDate()%4)].rooms[0].name + "</span>";
+                    time_html += "</label>";
+                    time_html += "<input type=\"radio\" id=\"" + ("0" + time_should_show.getHours().toString()).substr(-2) + ":" + ("0" + time_should_show.getMinutes().toString()).substr(-2) + "\" class=\"d-none\" name=\"time\" value=\"" + ("0" + time_should_show.getHours().toString()).substr(-2) + ":" + ("0" + time_should_show.getMinutes().toString()).substr(-2) + "\" />";
+                    time_html += "</div>";
                     $("#time").append(time_html);
+
+                    $(".time-select").click(function() {
+                        $(".time-select").removeClass("clicked");
+                        $(this).addClass("clicked");
+                        reload_seat();
+                        $("#masking,#popup,#confirm-seat").fadeIn();
+                    });
                 }
             }
 
@@ -376,17 +479,81 @@
 
             var swiper1_previous_index = 0;
             var checkSwiper1 = setInterval(function() {
-                if (user_select_date != null && swiper1 != null) {
+                if (movies != null && swiper1 != null) {
                     var now_index = swiper1.activeIndex;
                     if (swiper1_previous_index != now_index) {
-                        loadMovieTime();
+                        $(".movieSelectRadio").removeAttr("checked");
+                        $(".movieSelectRadio").each(function(index,ele){
+                            if ($(ele).val() == now_index) {
+                                $(ele).attr("checked", "true");
+                            }
+                        });
+                        loadMovieDesc();
+                        if (user_select_date != null) {
+                            loadMovieTime();
+                        }
                         swiper1_previous_index = now_index;
                     }
                 }
             }, 1);
             
             
-
+            // Start of Seat
+            function checkedSeat() {
+                var checkedValue = false;
+                $("label.seat-available.seat-clicked").each(function () {
+                    checkedValue = true;
+                });
+                if (checkedValue) {
+                    $("#confirm-button").addClass("confirm-button-available");
+                }
+                else {
+                    $("#confirm-button").removeClass("confirm-button-available");
+                }
+            }
+            function reload_seat() {
+                $("#seat").html("");
+                $("#confirm-button").removeClass("confirm-button-available");
+                var seat_name_prefix = ["A", "B", "C", "D", "E"];
+                var seat_odd_available = [1,1,0,1,0,1,0,1,0,1,0,0];
+                var seat_even_available = [0,0,1,0,1,0,1,0,1,0,1,1];
+                var seatSOP_html = "<div class=\"seat-circle seat-sop\" title=\"Unavailable due to SOP.\"></div>";
+                for (var r = 0; r < 5; r++) {
+                    var odd_or_even = r%2;
+                    var seat_to_arrange = [];
+                    if (odd_or_even == 1) {
+                        seat_to_arrange = seat_even_available;
+                    }
+                    else {
+                        seat_to_arrange = seat_odd_available;
+                    }
+                    for (var i = 0; i < 12; i++) {
+                        var seat_number = seat_name_prefix[r] + (i+1).toString();
+                        var seat_html = "<label for=\"" + seat_number + "\" class=\"seat-circle seat-available\"></label>";
+                        seat_html += "<input type=\"checkbox\" id=\"" + seat_number + "\" class=\"d-none\" name=\"seat[]\" value=\"" + seat_number + "\" />";
+                        if (seat_to_arrange[i] == 1) {
+                            $("#seat").append(seat_html);
+                        }
+                        else {
+                            $("#seat").append(seatSOP_html);
+                        }
+                        
+                        if (i == 1 || i == 9) {
+                            var empty_stair_html = "<div class=\"seat-circle\"></div>";
+                            $("#seat").append(empty_stair_html);
+                        }
+                    }
+                }
+                $("label.seat-available").click(function () {
+                    $(this).toggleClass("seat-clicked");
+                    checkedSeat();
+                });
+            }
+            
+            $("#masking,#close-times").click(function () {
+                $("#masking,#popup,#confirm-seat").fadeOut();
+            });
+            // End of Seat
         });
     </script>
 </body>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Screen - Ticket</title>
+    <link rel="stylesheet" href="dist/bootstrap-4.6.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/bootstrap-icons-1.7.2/bootstrap-icons.css" />
+    <link rel="stylesheet" href="dist/fontawesome-5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="dist/swiper-7.4.1/css/swiper-bundle.min.css" />
+    <script src="dist/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="dist/popper-2.11.0/popper.min.js"></script>
+    <script src="dist/bootstrap-4.6.1/js/bootstrap.min.js"></script>
+    <script src="dist/swiper-7.4.1/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/movie-now-showing.css" />
+</head>
+<body>
+    <div id="menu-navbar" class="fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" id="logo" class="font-weight-bold text-decoration-none text-white py-2 user-select-none"><span class="logo-yellow">Big</span> Screen</a>
+                <div id="menu" class="d-lg-flex align-items-center">
+                    <a href="index.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Home</a>
+                    <a href="movie-now-showing.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Movie / Now Showing</a>
+                    <a href="promotions.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Promotions</a>
+                    <div id="has-sub-menu" class="position-relative has-sub-menu">
+                        <a class="text-decoration-none user-select-none">
+                            <div id="expand-sub-menu" class="sub-menu-btn menu-nav-hover py-2 px-4">Help <i id="sub-menu-arrow-position" class="bi bi-chevron-down d-lg-none"></i></div>
+                        </a>
+                        <div id="sub-menu" class="sub-menu">
+                            <a href="about.html" class="text-decoration-none user-select-none">
+                                <div class="menu-nav-sub-menu-hover py-2 px-4">About Us</div>
+                            </a>
+                            <a href="feedback.html" class="text-decoration-none user-select-none">
+                                <div class="menu-nav-sub-menu-hover py-2 px-4">Feedback</div>
+                            </a>
+                            <a href="privacy-policy.html" class="text-decoration-none user-select-none">
+                                <div class="menu-nav-sub-menu-hover py-2 px-4">Privacy Policy</div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="login.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Login</a>
+                </div>
+                <i id="mobile-nav" class="bi bi-list menu-nav-hover user-select-none d-lg-none py-2 px-4"></i>
+            </div>
+        </div>
+    </div>
+    <div id="first-content">
+        <form action="./food-beverages.html" method="get" onsubmit="return checkvalidate()">
+            <div class="py-2">
+                <div class="select-title select-title-height">
+                    <div class="container">
+                        <label class="mb-0 select-title-label-height text-white">Your Ticket</label>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="container">
+                    <div id="ticketInfo" class="w-100 text-white">
+
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 border-top border-bottom border-dark">
+                <div class="container">
+                    <div id="hall-date-time" class="w-100 text-white">
+
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 border-top border-bottom border-dark">
+                <div class="container">
+                    <div id="seat" class="w-100 text-white">
+
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 bg-darkgrey border-bottom border-dark">
+                <div class="container">
+                    <div id="ticket" class="w-100 text-white">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 m-auto">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <h5 class="">Adult (1x RM12.00)</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn ticket-btn" type="button" onclick="minusSeat('adult')">-</button>
+                                                </div>
+                                                <input type="number" id="adult" class="form-control text-center bg-body text-white" name="adult" value="0" placeholder="" min="0" >
+                                                <div class="input-group-append">
+                                                    <button class="btn ticket-btn" type="button" onclick="plusSeat('adult')">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5>Children (1x RM9.00)</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn ticket-btn" type="button" onclick="minusSeat('children')">-</button>
+                                                </div>
+                                                <input type="number" id="children" class="form-control text-center bg-body text-white" name="children" value="0" placeholder="" min="0" >
+                                                <div class="input-group-append">
+                                                    <button class="btn ticket-btn" type="button" onclick="plusSeat('children')">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5>OKU (1x RM9.00)</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn ticket-btn" type="button" onclick="minusSeat('OKU')">-</button>
+                                                </div>
+                                                <input type="number" id="OKU" class="form-control text-center bg-body text-white" name="OKU" value="0" placeholder="" min="0" >
+                                                <div class="input-group-append">
+                                                    <button class="btn ticket-btn" type="button" onclick="plusSeat('OKU')">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5>Senior Citizen (1x RM9.00)</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn ticket-btn" type="button" onclick="minusSeat('senior')">-</button>
+                                                </div>
+                                                <input type="number" id="senior" class="form-control text-center bg-body text-white" name="senior" value="0" placeholder="" min="0" >
+                                                <div class="input-group-append">
+                                                    <button class="btn ticket-btn" type="button" onclick="plusSeat('senior')">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 border-bottom border-dark">
+                <div class="container">
+                    <div class="w-100 text-white">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <h5 class="mb-0">Total : RM <span id="price">0.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="container">
+                    <div class="w-100">
+                        <button type="submit" class="btn btn-block text-uppercase confirm-button-available">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="bg-darkgrey w-100 user-select-none border-top border-bottom border-secondary footer-font">
+        <div class="py-5">
+            <div class="container-fluid">
+                <div class="px-5">
+                    <div class="row align-items-center text-white">
+                        <div class="col-12 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="movie-now-showing.html" class="text-decoration-none text-center text-white font-weight-bold mb-3">Movie / Now Showing</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="promotions.html" class="text-decoration-none text-center text-white font-weight-bold mb-3">Promotions</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <p class="font-weight-bold text-center">Help <i class="bi bi-chevron-down d-lg-none"></i></p>
+                                <a href="about.html" class="text-decoration-none text-center text-white mb-3">About Us</a>
+                                <a href="feedback.html" class="text-decoration-none text-center text-white mb-3">Feedback</a>
+                                <a href="privacy-policy.html" class="text-decoration-none text-center text-white mb-3">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-darkgrey w-100 user-select-none border-bottom border-dark footer-font">
+        <div class="py-3">
+            <div class="container-fluid">
+                <div class="px-5">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="mb-0 text-center text-white font-weight-bold mr-3">Connect With Us :</p>
+                        <a href="https://www.facebook.com" target="_blank" class="text-decoration-none text-center text-white mr-3">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-decoration-none text-center text-white mr-3">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var userSeatTotal = null;
+        if (localStorage.getItem("seat") != null && localStorage.getItem("seat") != undefined && localStorage.getItem("seat") != "") {
+            userSeatTotal = localStorage.getItem("seat").split(",");
+        }
+
+        function plusSeat(ele) {
+            if (userSeatTotal != null && userSeatTotal.length > 0) {
+                var now = parseInt(document.getElementById(ele).value);
+                if (checkMax()) {
+                    document.getElementById(ele).value = ++now;
+                }
+                updatePrice();
+            }
+        }
+        function minusSeat(ele) {
+            if (userSeatTotal != null && userSeatTotal.length > 0) {
+                var now = parseInt(document.getElementById(ele).value);
+                if (now > 0) {
+                    document.getElementById(ele).value = --now;
+                }
+                updatePrice();
+            }
+        }
+        function checkMax() {
+            var adult_val = document.getElementById("adult").value;
+            var children_val = document.getElementById("children").value;
+            var OKU_val = document.getElementById("OKU").value;
+            var senior_val = document.getElementById("senior").value;
+
+            var flag = false;
+
+            if (userSeatTotal.length != null && parseInt(adult_val)+parseInt(children_val)+parseInt(OKU_val)+parseInt(senior_val) < userSeatTotal.length) {
+                flag = true;
+            }
+
+            return flag;
+        }
+
+        function updatePrice() {
+            var adult_val = document.getElementById("adult").value;
+            var children_val = document.getElementById("children").value;
+            var OKU_val = document.getElementById("OKU").value;
+            var senior_val = document.getElementById("senior").value;
+
+            $("#price").text(((adult_val*12.00)+(children_val*9.00)+(OKU_val*9.00)+(senior_val*9.00)).toFixed(2));
+        }
+
+        function checkvalidate() {
+            var adult_val = document.getElementById("adult").value;
+            var children_val = document.getElementById("children").value;
+            var OKU_val = document.getElementById("OKU").value;
+            var senior_val = document.getElementById("senior").value;
+
+            var flag = false;
+
+            if (userSeatTotal.length != null && parseInt(adult_val)+parseInt(children_val)+parseInt(OKU_val)+parseInt(senior_val) === userSeatTotal.length) {
+                localStorage.setItem("price", ((adult_val*12.00)+(children_val*9.00)+(OKU_val*9.00)+(senior_val*9.00)).toFixed(2));
+                flag = true;
+            }
+            updatePrice();
+
+            return flag;
+        }
+
+        $(document).ready(function () {
+            // Start of Menu Navigation Bar
+            $("#mobile-nav").click(function () {
+                if ($(this).hasClass("bi-list")) {
+                    $("#logo").addClass("position-relative");
+                    $("#logo").css("z-index", "10000");
+                    $("#menu").addClass("mobile-open-menu");
+                    $(this).removeClass("bi-list");
+                    $(this).addClass("bi-x-square position-relative");
+                    $(this).css("z-index", "10000");
+                }
+                else {
+                    $("#logo").removeClass("position-relative");
+                    $("#logo").css("z-index", "0");
+                    $("#menu").removeClass("mobile-open-menu");
+                    $(this).addClass("bi-list");
+                    $(this).removeClass("bi-x-square position-relative");
+                    $(this).css("z-index", "0");
+                }
+            });
+
+            $("#expand-sub-menu").click(function () {
+                $("#sub-menu").toggleClass("sub-menu-expanded");
+            });
+            // End of Menu Navigation Bar
+            var movies = null;
+            $.ajax({
+                url: "./json/movies.json",
+                type: "GET",
+                dataType: "json",
+                success: function(data) {
+                    movies = data.data;
+                    loadDetails();
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.log(jqXHR);
+                    console.log(textStatus);
+                    console.log(errorThrown);
+                }
+            });
+
+            function loadDetails() {
+                if (typeof(Storage) !== "undefined") {
+                    if (localStorage.getItem("date") != null && localStorage.getItem("date") != undefined && localStorage.getItem("date") != "" &&
+                        localStorage.getItem("movie_index") != null && localStorage.getItem("movie_index") != undefined && localStorage.getItem("movie_index") != "" &&
+                        localStorage.getItem("time") != null && localStorage.getItem("time") != undefined && localStorage.getItem("time") != "" &&
+                        localStorage.getItem("seat") != null && localStorage.getItem("seat") != undefined && localStorage.getItem("seat") != "" && movies != null) {
+                        var choosen_movie = movies[parseInt(localStorage.getItem("movie_index"))];
+                        var ticketInfo = "<h4 class=\"text-center\">" + choosen_movie.name + "</h4>";
+                        ticketInfo += "<p class=\"text-center text-secondary\">" + choosen_movie.movieClassification + " | " + (choosen_movie.movieLanguege).toUpperCase() + " | " + choosen_movie.running_time + " min" + "</p>";
+                        $("#ticketInfo").html(ticketInfo);
+
+                        var mov_date = new Date(localStorage.getItem("date"));
+                        
+                        var hall_date_time = "<h5 class=\"text-center\">" + choosen_movie.show_time[mov_date.getDate()%4].rooms[0].name + "</h5>";
+                        hall_date_time += "<h5 class=\"text-center\">" + localStorage.getItem("date") + " " + localStorage.getItem("time") + "</h5>";
+                        $("#hall-date-time").html(hall_date_time);
+
+
+                        var userSeat = localStorage.getItem("seat").split(",");
+                        var userSeat_html = "<h5 class=\"text-center\">Seat :</h5>";
+                        userSeat_html += "<h5 class=\"text-center\">" + localStorage.getItem("seat") + "</h5>";
+                        userSeat_html += "<p class=\"text-center text-secondary\">Quantity : " + userSeat.length + " seat(s)</p>";
+                        $("#seat").html(userSeat_html);
+                    }
+                    else {
+                        var not_available = "<div class=\"container\">"+
+                                                "<div class=\"py-5\">"+
+                                                "<div class=\"alert alert-warning\" role=\"alert\">"+
+                                                "You have no choose your movie yet! <a href=\"movie-now-showing.html\" class=\"alert-link\">Click Here</a>"+
+                                                "</div>"+
+                                                "</div>"+
+                                                "</div>";
+                        $("#first-content").html(not_available);
+                    }
+                } else {
+                    alert("Sorry! No Web Storage support... Please use another browser that support it.");
+                }
+            }
+
+
+            
+
+            //$("#ticket").html("hahah");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Screen - Payment Options</title>
+    <link rel="stylesheet" href="dist/bootstrap-4.6.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/bootstrap-icons-1.7.2/bootstrap-icons.css" />
+    <link rel="stylesheet" href="dist/fontawesome-5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="dist/swiper-7.4.1/css/swiper-bundle.min.css" />
+    <script src="dist/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="dist/popper-2.11.0/popper.min.js"></script>
+    <script src="dist/bootstrap-4.6.1/js/bootstrap.min.js"></script>
+    <script src="dist/swiper-7.4.1/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/payment-options.css" />
+  </head>
+  <body>
+    <div id="menu-navbar" class="fixed-top">
+      <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+              <a href="index.html" id="logo" class="font-weight-bold text-decoration-none text-white py-2 user-select-none"><span class="logo-yellow">Big</span> Screen</a>
+              <div id="menu" class="d-lg-flex align-items-center">
+                  <a href="index.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Home</a>
+                  <a href="movie-now-showing.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Movie / Now Showing</a>
+                  <a href="promotions.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Promotions</a>
+                  <div id="has-sub-menu" class="position-relative has-sub-menu">
+                      <a class="text-decoration-none user-select-none">
+                          <div id="expand-sub-menu" class="sub-menu-btn menu-nav-hover py-2 px-4">Help <i id="sub-menu-arrow-position" class="bi bi-chevron-down d-lg-none"></i></div>
+                      </a>
+                      <div id="sub-menu" class="sub-menu">
+                          <a href="about.html" class="text-decoration-none user-select-none">
+                              <div class="menu-nav-sub-menu-hover py-2 px-4">About Us</div>
+                          </a>
+                          <a href="feedback.html" class="text-decoration-none user-select-none">
+                              <div class="menu-nav-sub-menu-hover py-2 px-4">Feedback</div>
+                          </a>
+                          <a href="privacy-policy.html" class="text-decoration-none user-select-none">
+                              <div class="menu-nav-sub-menu-hover py-2 px-4">Privacy Policy</div>
+                          </a>
+                      </div>
+                  </div>
+                  <a href="login.html" class="menu-nav-hover text-decoration-none py-2 px-4 user-select-none">Login</a>
+              </div>
+              <i id="mobile-nav" class="bi bi-list menu-nav-hover user-select-none d-lg-none py-2 px-4"></i>
+          </div>
+      </div>
+  </div>
+  <div style="background-color: #242333;" id="first-content">
+    <div class="d-flex justify-content-center align-items-center min-vh-100 text-white">
+      <form action="./thankyou.html" method="get" onsubmit="return validatepayment()">
+        <h2 class="text-center">Please Choose Your Preferred Payment Method</h2>
+        <p class="text-center"><span style="color:#FFFFFF;"><input id="payment1" class="mr-3" name="button" type="radio" value="1" /><label for="payment1">Credit Card</label></span></p>
+    
+        <p class="text-center"><span style="color:#FFFFFF;"><input id="payment2" class="mr-3" name="button" type="radio" value="2" /><label for="payment2">Debit Card</label></span></p>
+    
+        <p class="text-center"><span style="color:#FFFFFF;"><input id="payment3" class="mr-3" name="button" type="radio" value="3" /><label for="payment3">Online Banking</label></span></p>
+    
+        <p class="text-center"><span style="color:#FFFFFF;"><input id="payment4" class="mr-3" name="button" type="radio" value="4" /><label for="payment4">Cash At Counter</label></span></p>
+    
+        <p class="text-center"><span style="color:#FFFFFF; text-align: center"><input id="payment5" class="mr-3" name="button" type="radio" value="5" disabled /><label for="payment5">E-Wallet(Will be available soon)</label></span></p>
+    
+    
+        <p class ="text text-center">
+          <input type="submit" value="Proceed to Payment" class="btn btn-color" >
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="bg-darkgrey w-100 user-select-none border-top border-bottom border-secondary footer-font">
+      <div class="py-5">
+          <div class="container-fluid">
+              <div class="px-5">
+                  <div class="row align-items-center text-white">
+                      <div class="col-12 col-lg-4">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <a href="movie-now-showing.html" class="text-decoration-none text-center text-white font-weight-bold mb-3">Movie / Now Showing</a>
+                          </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <a href="promotions.html" class="text-decoration-none text-center text-white font-weight-bold mb-3">Promotions</a>
+                          </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                          <div class="d-flex justify-content-center align-items-center flex-column">
+                              <p class="font-weight-bold text-center">Help <i class="bi bi-chevron-down d-lg-none"></i></p>
+                              <a href="about.html" class="text-decoration-none text-center text-white mb-3">About Us</a>
+                              <a href="feedback.html" class="text-decoration-none text-center text-white mb-3">Feedback</a>
+                              <a href="privacy-policy.html" class="text-decoration-none text-center text-white mb-3">Privacy Policy</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="bg-darkgrey w-100 user-select-none border-bottom border-dark footer-font">
+      <div class="py-3">
+          <div class="container-fluid">
+              <div class="px-5">
+                  <div class="d-flex justify-content-center align-items-center">
+                      <p class="mb-0 text-center text-white font-weight-bold mr-3">Connect With Us :</p>
+                      <a href="https://www.facebook.com" target="_blank" class="text-decoration-none text-center text-white mr-3">
+                          <i class="bi bi-facebook"></i>
+                      </a>
+                      <a href="https://www.instagram.com" target="_blank" class="text-decoration-none text-center text-white mr-3">
+                          <i class="bi bi-instagram"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script>
+      function validatepayment() {
+        var flag = false;
+        var payment_method = $("input[name=\"button\"]:checked").val();
+        if (payment_method != null) {
+          flag = true;
+        }
+        return flag;
+      }
+      $(document).ready(function () {
+          // Start of Menu Navigation Bar
+          $("#mobile-nav").click(function () {
+              if ($(this).hasClass("bi-list")) {
+                  $("#logo").addClass("position-relative");
+                  $("#logo").css("z-index", "10000");
+                  $("#menu").addClass("mobile-open-menu");
+                  $(this).removeClass("bi-list");
+                  $(this).addClass("bi-x-square position-relative");
+                  $(this).css("z-index", "10000");
+              }
+              else {
+                  $("#logo").removeClass("position-relative");
+                  $("#logo").css("z-index", "0");
+                  $("#menu").removeClass("mobile-open-menu");
+                  $(this).addClass("bi-list");
+                  $(this).removeClass("bi-x-square position-relative");
+                  $(this).css("z-index", "0");
+              }
+          });
+
+          $("#expand-sub-menu").click(function () {
+              $("#sub-menu").toggleClass("sub-menu-expanded");
+          });
+          // End of Menu Navigation Bar
+      });
+    </script>
+  </body>
+</html>

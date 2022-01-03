@@ -25,8 +25,13 @@ label.select-title-label-height {
 .swiper-slide.swiper-slide-active>img {
     border: 2px solid #FFEE00;
 }
-
-
+.time-select {
+    cursor: pointer;
+}
+.time-select.clicked {
+    background-color: #FFEE00;
+    color: black;
+}
 
 
 
@@ -66,14 +71,14 @@ label.select-title-label-height {
     min-height: 100vh;
     background-color: black;
     opacity: 0.7;
-    z-index: 2;
+    z-index: 10001;
 }
 #popup {
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 10002;
 }
 .seat-container {
     max-width: 100%;
@@ -124,11 +129,28 @@ label.select-title-label-height {
     width: 100%;
     bottom: 0;
     left: 0;
-    z-index: 3;
+    z-index: 10002;
 }
 .confirm-button-available {
     background-color: #FFEE00;
 }
 .confirm-button-available:hover {
     background-color: #e0d100;
+}
+
+
+
+
+
+
+.bg-body {
+    background-color: #000;
+}
+input.bg-body:focus,input.bg-body:active {
+    background-color: #000;
+}
+
+.ticket-btn {
+    color: black;
+    background-color: #FFEE00;
 }

@@ -1,0 +1,18 @@
+.btn-color {
+  height: 50px;
+  width: 330px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  background: #33cccc;
+  color: #ffffff;
+  -webkit-box-shadow: -2px 10px 20px -1px rgba(51, 204, 204, 0.4);
+  -moz-box-shadow: -2px 10px 20px -1px rgba(51, 204, 204, 0.4);
+  -o-box-shadow: -2px 10px 20px -1px rgba(51, 204, 204, 0.4);
+  box-shadow: -2px 10px 20px -1px rgba(51, 204, 204, 0.4);
+}
+.btn-color:hover, .btn-color:focus, .btn-color:active {
+  color: #ffffff;
+  background: #47d1d1 !important;
+  outline: none;
+}
